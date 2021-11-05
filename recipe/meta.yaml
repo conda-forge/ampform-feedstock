@@ -1,19 +1,18 @@
 {% set name = "AmpForm" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url:
-    https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 40f5e19861c6ad0526f3e3f6bda9763f2ff34888b7be26437f60e0cbd847a7c3
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 60813a1a9954c4fce48d3d0888fc81340eba8859803590d4cbd02f0f9abaf807
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,8 +40,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary:
-    Automatically generate symbolic amplitude models for Partial Wave Analysis
+  summary: Automatically generate symbolic amplitude models for Partial Wave Analysis
 
   description: |
     AmpForm is a Python library of spin formalisms and dynamics with which you can
