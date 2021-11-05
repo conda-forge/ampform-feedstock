@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.10
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.6,<3.10
     - attrs >=20.1.0
     - qrules ==0.9.*
     - numpy >=1.16,<1.21
