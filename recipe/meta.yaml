@@ -30,7 +30,6 @@ requirements:
 test:
   imports:
     - ampform
-    - ampform.data
     - ampform.dynamics
     - ampform.helicity
     - ampform.kinematics
