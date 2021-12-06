@@ -1,5 +1,5 @@
 {% set name = "AmpForm" %}
-{% set version = "0.11.5" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 60813a1a9954c4fce48d3d0888fc81340eba8859803590d4cbd02f0f9abaf807
+  sha256: 0b6ca863dca0b615b4d00db5c617bd33b9cb46fe111675e80f7efdbe9f444ec8
 
 build:
   noarch: python
@@ -17,14 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.10
+    - python >=3.6
     - setuptools_scm
   run:
-    - python >=3.6,<3.10
+    - python >=3.6
     - attrs >=20.1.0
     - qrules ==0.9.*
-    - numpy >=1.16,<1.21
-    - sympy
+    - sympy >=1.8
     - typing-extensions
 
 test:
