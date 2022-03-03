@@ -23,6 +23,7 @@ requirements:
     - python >=3.6
     - attrs >=20.1.0
     - qrules ==0.9.*
+    - singledispatchmethod
     - sympy >=1.8
     - typing-extensions
 
