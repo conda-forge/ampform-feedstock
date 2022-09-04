@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - attrs >=20.1.0
     - qrules ==0.9.*
-    - sympy >=1.10,<1.11
+    - sympy >=1.10,<1.12
     - typing-extensions
 
 test:
