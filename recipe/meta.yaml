@@ -1,5 +1,5 @@
 {% set name = "AmpForm" %}
-{% set version = "0.14.3" %}
+{% set version = "0.14.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: d11f8b362b030b9d421b0252e3be09d1ae3f477fbae7093dbaadca62b04a6d8a
+  sha256: 26682982e04bdee1bcdefe18af2306edafad149dab088cfb4b6609e3b2a0e167
 
 build:
   noarch: python
