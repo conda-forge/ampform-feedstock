@@ -1,11 +1,11 @@
-About ampform
-=============
+About ampform-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ampform-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ComPWA/ampform
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ampform-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatically generate symbolic amplitude models for Partial Wave Analysis
 
