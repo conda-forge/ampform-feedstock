@@ -31,7 +31,9 @@ test:
     - ampform
     - ampform.dynamics
     - ampform.helicity
+    - ampform.io
     - ampform.kinematics
+    - ampform.sympy
 
 about:
   home: https://github.com/ComPWA/ampform
