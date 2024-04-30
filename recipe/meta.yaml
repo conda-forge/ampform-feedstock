@@ -23,11 +23,11 @@ requirements:
   run:
     - python >=3.7
     - attrs >=20.1.0
-    - importlib-metadata  # [py<38]
+    - importlib-metadata
     - qrules >=0.9.6
-    - singledispatchmethod  # [py<38]
+    - singledispatchmethod
     - sympy >=1.10
-    - typing-extensions  # [py<38]
+    - typing-extensions
 
 test:
   imports:
