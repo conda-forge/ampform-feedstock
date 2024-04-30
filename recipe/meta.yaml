@@ -10,40 +10,33 @@ source:
   sha256: a5780b6f8f48bea554e533556fb21139225627394adb4f6914ed75b8bb11b4a4
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - pip
     - python >=3.7
-    - setuptools_scm
+    - setuptools >=61.2
+    - setuptools-scm
+    - pip
   run:
     - python >=3.7
     - attrs >=20.1.0
-    - importlib-metadata
     - qrules >=0.9.6
-    - singledispatchmethod
     - sympy >=1.10
-    - typing-extensions
+    - importlib-metadata  # [py<38]
+    - singledispatchmethod  # [py<38]
+    - typing-extensions  # [py<38]
 
 test:
   imports:
     - ampform
-    - ampform.dynamics
-    - ampform.helicity
-    - ampform.io
-    - ampform.kinematics
-    - ampform.sympy
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/ComPWA/ampform
-  license: GPL-3.0-or-later
-  license_family: GPL
-  license_file: LICENSE
-  summary: Automatically generate symbolic amplitude models for Partial Wave Analysis
-
   description: |
     AmpForm is a Python library of spin formalisms and dynamics with which you can
     automatically formulate symbolic amplitude models for Partial Wave Analysis.
@@ -51,11 +44,14 @@ about:
     [SymPy](https://www.sympy.org/en/index.html). This note only makes it easy to
     inspect and visualize the resulting amplitude models, but also means the
     amplitude models can be used as templates for faster computational back-ends
-    (see [TensorWaves](https://github.com/ComPWA/tensorwaves))!
-
-
+    (see [TensorWaves](https://github.com/ComPWA/tensorwaves)).
   dev_url: https://github.com/ComPWA/ampform
   doc_url: https://ampform.readthedocs.io
+  home: https://github.com/ComPWA/ampform
+  license: GPL-3.0-or-later
+  license_family: GPL
+  license_file: LICENSE
+  summary: Automatically generate symbolic amplitude models for Partial Wave Analysis
 
 extra:
   recipe-maintainers:
