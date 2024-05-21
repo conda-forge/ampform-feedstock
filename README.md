@@ -157,4 +157,5 @@ Feedstock Maintainers
 =====================
 
 * [@redeboer](https://github.com/redeboer/)
+* [@shenvitor](https://github.com/shenvitor/)
 
