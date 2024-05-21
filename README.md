@@ -19,7 +19,7 @@ The resulting amplitude models are formulated with
 [SymPy](https://www.sympy.org/en/index.html). This note only makes it easy to
 inspect and visualize the resulting amplitude models, but also means the
 amplitude models can be used as templates for faster computational back-ends
-(see [TensorWaves](https://github.com/ComPWA/tensorwaves))!
+(see [TensorWaves](https://github.com/ComPWA/tensorwaves)).
 
 
 Current build status
