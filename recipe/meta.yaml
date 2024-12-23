@@ -17,17 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
     - setuptools >=61.2
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >=3.9
     - attrs >=20.1.0
-    - importlib-metadata
     - qrules >=0.9.6
-    - singledispatchmethod
     - sympy >=1.10
-    - typing-extensions
 
 test:
   imports:
@@ -49,8 +46,8 @@ about:
   dev_url: https://github.com/ComPWA/ampform
   doc_url: https://ampform.readthedocs.io
   home: https://github.com/ComPWA/ampform
-  license: GPL-3.0-or-later
-  license_family: GPL
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: Automatically generate symbolic amplitude models for Partial Wave Analysis
 
